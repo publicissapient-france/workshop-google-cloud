@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.samples.petclinic.web.VisitsViewTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.054 sec <<< FAILURE!
+getVisitsXml(org.springframework.samples.petclinic.web.VisitsViewTests)  Time elapsed: 1.054 sec  <<< ERROR!
+javax.servlet.ServletException: Could not resolve view with name 'exception' in servlet with name ''
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1190)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:112)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:992)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:939)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:168)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:136)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:134)
+	at org.springframework.samples.petclinic.web.VisitsViewTests.getVisitsXml(VisitsViewTests.java:63)
+
